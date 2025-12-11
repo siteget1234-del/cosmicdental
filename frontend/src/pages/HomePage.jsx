@@ -208,38 +208,43 @@ export const HomePage = () => {
       {/* Doctor Section */}
       <section className="py-20 bg-white" data-animate id="doctor-section">
         <div className="container mx-auto px-4">
-          <div className={`grid md:grid-cols-2 gap-12 items-center transition-all duration-1000 ${isVisible['doctor-section'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="relative">
-              <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-cyan-100 to-blue-100 rounded-3xl"></div>
-              <img
-                src="https://customer-assets.emergentagent.com/job_cosmic-dental/artifacts/zxc10fp2_Screenshot_20251211-114738.png"
-                alt="Dr. Subhash I S"
-                className="relative rounded-3xl shadow-2xl"
-              />
-            </div>
-            <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-cyan-50 rounded-full border border-cyan-200">
+          <div className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible['doctor-section'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="text-center mb-12">
+              <div className="inline-block px-4 py-2 bg-cyan-50 rounded-full border border-cyan-200 mb-6">
                 <span className="text-cyan-600 font-semibold text-sm">Meet Our Chief Dental Surgeon</span>
               </div>
-              <h2 className="text-4xl font-bold text-gray-900">
+              <div className="flex justify-center mb-6">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full blur-xl opacity-30"></div>
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_cosmic-dental/artifacts/y15lm7jc_20251211_121901.jpg"
+                    alt="Dr. Subhash I S"
+                    className="relative w-40 h-40 rounded-full object-cover border-4 border-white shadow-2xl"
+                  />
+                </div>
+              </div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-2">
                 Dr. Subhash I S
-                <br />
-                <span className="text-cyan-600">ഡോ. സുഭാഷ് ഐ എസ്</span>
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-2xl text-cyan-600 mb-3">ഡോ. സുഭാഷ് ഐ എസ്</p>
+              <p className="text-lg text-gray-600 mb-6">
                 BDS, Dph (Chief Dental Surgeon)
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
                 With over 19 years of excellence in dentistry, Dr. Subhash I S leads our team of expert dental professionals. Specializing in advanced dental procedures, he has transformed thousands of smiles with his expertise in root canal treatments, cosmetic dentistry, and comprehensive oral care.
               </p>
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <Card className="p-4 border-l-4 border-cyan-500 hover:shadow-lg transition-shadow">
-                  <p className="text-3xl font-bold text-cyan-600">19+</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <Card className="p-6 text-center border-t-4 border-cyan-500 hover:shadow-lg transition-shadow">
+                  <p className="text-4xl font-bold text-cyan-600 mb-2">19+</p>
                   <p className="text-gray-600">Years Experience</p>
                 </Card>
-                <Card className="p-4 border-l-4 border-blue-500 hover:shadow-lg transition-shadow">
-                  <p className="text-3xl font-bold text-blue-600">1000+</p>
+                <Card className="p-6 text-center border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
+                  <p className="text-4xl font-bold text-blue-600 mb-2">1000+</p>
                   <p className="text-gray-600">Successful Treatments</p>
+                </Card>
+                <Card className="p-6 text-center border-t-4 border-purple-500 hover:shadow-lg transition-shadow">
+                  <p className="text-4xl font-bold text-purple-600 mb-2">4.8⭐</p>
+                  <p className="text-gray-600">Patient Rating</p>
                 </Card>
               </div>
             </div>
